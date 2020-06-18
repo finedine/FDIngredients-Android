@@ -1,0 +1,3 @@
+include ':fdingredients'
+include ':app'
+rootProject.name = "FDIngredientsExample"
