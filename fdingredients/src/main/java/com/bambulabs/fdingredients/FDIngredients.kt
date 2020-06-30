@@ -135,7 +135,7 @@ class FDIngredients {
          * @return
          */
 
-        private fun getIngredientResID(ingredient: String): Int {
+        fun getIngredientResID(ingredient: String): Int {
             return getResId(
                 getNameWithUnderscore(getNameForDrawable(ingredient)),
                 R.drawable::class.java
