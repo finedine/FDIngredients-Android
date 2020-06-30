@@ -97,7 +97,7 @@ class FDIngredients {
             color: Int
         ): ImageView? {
 
-            val resID = getResId(getNameWithUnderscore(getNameForDrawable(ingredient)), R.drawable::class.java)
+            val resID = getIngredientResID(ingredient)
 
             if (resID != -1) {
 
@@ -126,6 +126,20 @@ class FDIngredients {
 
             } else
                 return null
+        }
+
+        /**
+         * Get ingredient res ID
+         *
+         * @param ingredient
+         * @return
+         */
+
+        private fun getIngredientResID(ingredient: String): Int {
+            return getResId(
+                getNameWithUnderscore(getNameForDrawable(ingredient)),
+                R.drawable::class.java
+            )
         }
 
         fun getResId(resName: String, c: Class<*>): Int {
