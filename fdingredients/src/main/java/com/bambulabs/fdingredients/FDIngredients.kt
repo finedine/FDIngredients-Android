@@ -23,7 +23,6 @@ class FDIngredients {
             "sweetener",
             "phenylalanine",
             "laxative_if_used_excessively",
-            "milk_protein",
             "phosphate",
             "quinine",
             "caffeine",
