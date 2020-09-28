@@ -22,7 +22,7 @@ class FDIngredients {
             "waxed",
             "sweetener",
             "phenylalanine",
-            "laxative_if_used_excessively",
+            "laxative",
             "phosphate",
             "quinine",
             "caffeine",
