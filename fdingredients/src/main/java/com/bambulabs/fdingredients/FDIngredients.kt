@@ -25,7 +25,6 @@ class FDIngredients {
             "laxative",
             "phosphate",
             "quinine",
-            "caffeine",
             "taurine",
             "irradiated",
             "treated",
