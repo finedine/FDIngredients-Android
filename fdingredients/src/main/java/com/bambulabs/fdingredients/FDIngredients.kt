@@ -114,7 +114,7 @@ class FDIngredients {
                     )
 
                 }
-                params.setMargins(4, 4, 4, 4)
+                params.setMargins(12, 4, 12, 4)
                 params.gravity = Gravity.CENTER
                 imageView.layoutParams = params
 
