@@ -141,8 +141,15 @@ class FDIngredients {
         }
 
         fun getResId(resName: String, c: Class<*>): Int {
-            val idField = c.getDeclaredField(resName)
-            return idField.getInt(idField)
+            //val idField = c.getDeclaredField(resName)
+            //return idField.getInt(idField)
+            val resourceId = try {
+                val idField = c.getDeclaredField(resName)
+                idField.getInt(null) // use null for static fields
+            } catch (e: Exception) {
+                -1
+            }
+            return resourceId
         }
 
     }
