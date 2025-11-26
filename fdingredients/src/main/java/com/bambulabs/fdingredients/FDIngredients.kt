@@ -5,6 +5,7 @@ import android.graphics.PorterDuff
 import android.view.Gravity
 import android.widget.ImageView
 import android.widget.LinearLayout
+import androidx.core.content.ContextCompat
 
 class FDIngredients {
 
@@ -119,7 +120,14 @@ class FDIngredients {
                 params.gravity = Gravity.CENTER
                 imageView.layoutParams = params
 
-                imageView.setColorFilter(color, PorterDuff.Mode.SRC_IN)
+                val originalDrawable = ContextCompat.getDrawable(context, resID)
+
+                val mutableDrawable = originalDrawable?.mutate()
+
+                mutableDrawable?.setColorFilter(color, PorterDuff.Mode.SRC_IN)
+
+                imageView.setImageDrawable(mutableDrawable)
+
 
                 return imageView
 
