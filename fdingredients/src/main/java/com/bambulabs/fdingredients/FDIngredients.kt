@@ -1,6 +1,7 @@
 package com.bambulabs.fdingredients
 
 import android.content.Context
+import android.graphics.PorterDuff
 import android.view.Gravity
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -118,7 +119,7 @@ class FDIngredients {
                 params.gravity = Gravity.CENTER
                 imageView.layoutParams = params
 
-                imageView.setColorFilter(color)
+                imageView.setColorFilter(color, PorterDuff.Mode.SRC_IN)
 
                 return imageView
 
@@ -135,7 +136,7 @@ class FDIngredients {
 
         fun getIngredientResID(ingredient: String): Int {
             return getResId(
-                getNameWithUnderscore(getNameForDrawable(ingredient)),
+                getNameWithUnderscore(getNameForDrawable(ingredient)) as String,
                 R.drawable::class.java
             )
         }

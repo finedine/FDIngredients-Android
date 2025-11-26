@@ -3,12 +3,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 33
+    namespace = "com.bambulabs.fdingredientsexample"
+    compileSdkVersion 36
 
     defaultConfig {
         applicationId "com.bambulabs.fdingredientsexample"
         minSdkVersion 19
-        targetSdkVersion 33
+        targetSdkVersion 36
         versionCode 1
         versionName "1.0"
 

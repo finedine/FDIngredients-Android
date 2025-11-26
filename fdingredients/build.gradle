@@ -2,7 +2,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 android {
-    compileSdkVersion 33
+    namespace = "com.bambulabs.fdingredients"
+    compileSdkVersion 36
     buildToolsVersion "30.0.2"
 
 
